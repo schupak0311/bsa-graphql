@@ -1,0 +1,17 @@
+type Message {
+  id: Int! @id
+  text: String!
+  userId: String!
+  likeCount: Int
+  dislikeCount: Int
+  reply: Int
+  reactions: [MessageReaction!]!
+  createdAt: DateTime! @createdAt
+}
+
+type MessageReaction {
+  id: ID! @id
+  userId: String!
+  isLike: Boolean!
+  message: Message!
+}

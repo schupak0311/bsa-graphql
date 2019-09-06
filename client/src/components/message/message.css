@@ -1,0 +1,57 @@
+.message__text-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.message--self {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px 15px 10px 0;
+
+}
+
+.message__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.message--other {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.message__body{
+    flex: 1;
+}
+
+.message__reactions{
+    flex: 1;
+}
+
+.message__control {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.reactions {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+i {
+    margin-right: 15px;
+}
+ span {
+     margin-left: 5px;
+ }

@@ -1,0 +1,43 @@
+type Query {
+  messages(
+    filter: String
+    skip: Int
+    first: Int
+    orderBy: MessagesOrderBy
+  ): Messages!
+}
+
+type Subscription {
+  newMessage: Message
+  newReaction: MessageReaction
+}
+
+type Mutation {
+  postMessage(text: String!, userId: String!, reply: Int): Message!
+  setReaction(userId: String!, messageId: Int!, isLike: Boolean!): Message!
+}
+
+type Message {
+  id: Int!
+  text: String!
+  userId: String!
+  reply: Int
+  reactions: [MessageReaction!]!
+  likeCount: Int!
+  dislikeCount: Int!
+}
+
+type Messages {
+  messageList: [Message!]!
+  count: Int!
+}
+
+type MessageReaction {
+  userId: String!
+  isLike: Boolean!
+}
+
+enum MessagesOrderBy {
+  createdAt_DESC
+  createdAt_ASC
+}

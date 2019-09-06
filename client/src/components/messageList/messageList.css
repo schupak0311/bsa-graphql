@@ -1,0 +1,11 @@
+.message-list {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.pagination {
+	font-size: 25px;
+	margin-left: 30%;
+}

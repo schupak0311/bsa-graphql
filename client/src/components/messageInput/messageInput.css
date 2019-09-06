@@ -1,0 +1,17 @@
+.form--chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    margin: 0 10px;
+}
+
+.form--chat > .form__input{
+    width: 90%;
+    max-width: 600px;
+    margin-right: 10px;
+}
+
+.form--chat .MuiInput-underline:after {
+    border-bottom: 2px solid #5682a3 !important;
+}
